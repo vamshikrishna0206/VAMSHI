@@ -1,0 +1,433 @@
+<html>
+    <head>   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0px;
+            }
+            body{
+                background-color:rgb(226, 207, 207);
+            }
+            .nav{
+                display: flex;
+                width: 100%;
+                background-color: rgb(161, 213, 226);
+                height: 10vh;
+            }
+            .x1{
+                position:relative;
+                top:2vh;
+                left:2%; 
+            }
+            .x2{
+                width: 20%;              
+                position: relative;
+                top:2.5vh;
+                left:2%;
+                color:rgb(95, 120, 121);              
+            }
+            input{
+                border-radius: 20px;
+                width: 180px;
+                height: 4vh;
+                padding-left:15%;
+                font-weight: bold;
+                
+            }
+            .x3{
+                margin-top:3.5vh ;
+                margin-left: 30px;
+            }
+            span{
+                margin-left: 5px;
+                
+            }
+            a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.658);
+            }
+          .x4{
+            margin-top:2vh ;
+            margin-left: 200px;
+          }
+         .im,.im1{
+            border-radius: 50px;
+          }
+          .im1{
+            position:relative;
+            bottom:2.5vh;
+            left:10%;
+          }
+
+          .s{
+            position:relative;
+            top:0.4vh;
+            left:12%;
+          }
+          .act{
+            color:rgb(41, 245, 68);
+            position:relative;
+            bottom:6.5vh;
+            left:60%;
+          }
+          .page{
+            display:flex;
+
+          }
+          .start{
+            width:20%;
+            height:auto;
+            background-color:rgb(230, 240, 247);  
+            color: rgb(92, 88, 88);
+          }
+          h2,h4{
+            text-indent: 10%;
+          }
+          .r{
+            font-size:80%;
+            padding-right:2%;
+            color:rgb(64, 149, 204);
+          }
+          .g,.g1{
+            font-size:80%;
+            color:rgb(64, 149, 204);
+            
+          }
+          .g1{
+            padding-right: 2%;
+          }
+          .h,.book{
+            color:rgb(64, 149, 204)
+          }
+          h4{
+            color:rgb(196, 130, 8);
+          }
+          .view{
+            padding-top:4vh ;
+            display:flex;
+          }
+          .cover{
+            background-color: rgb(226, 228, 228);
+            height:auto;
+           
+          }
+          .first{
+            width:80%;
+          }
+          .second{
+            width:20%;
+            color:rgb(68, 68, 180);
+          }
+            .footer{
+                position:relative;
+                top:2vh;
+                bottom:0.1vh;
+                width:100%;
+                background-color:rgb(226, 228, 228);
+                display:flex;
+                height:5vh;
+                text-align:center; 
+                border-top:1px solid rgb(199, 192, 192);
+
+            }
+            .footer a{
+                color:rgb(14, 1, 1);
+                text-decoration:none;
+                width: inherit;
+                display:inline-block;
+                border-right:2px solid rgb(212, 210, 207);
+                padding-top:8px;
+            }
+            .footer a:hover{
+              background-color:rgba(80, 176, 250, 0.842);
+              color:rgb(244, 241, 238);   
+            }
+            .f1,.f2{
+              width: 50%;
+              padding-top:2vh;
+            }
+            .f1{
+              border-right: 1px solid rgb(129, 124, 124);
+            }
+            .code{
+              background-color:rgb(226, 228, 228);
+              position: relative;
+              top:3vh;
+              padding-bottom:10vh;
+              text-indent: 10%;
+            }
+            .dc{
+              text-align: center;
+              position:relative;
+              top:1vh;
+            }
+            .recents{
+              position:relative;
+              top:4vh;
+            }
+            .groups{
+              position: relative;
+              top:6vh;
+            }
+            .hashtag{
+              position:relative;
+              top:7vh;
+            }
+            .dis{
+              background-color:rgb(226, 228, 228);
+              height:5vh;
+              position:relative;
+              top:4vh;
+            }
+           .dis a{
+              color:rgb(23, 143, 223);
+            }
+          .center{
+            width:60%;
+            height:auto;
+            background-color: rgb(236, 243, 243);
+           
+          }
+          .innercenter{
+            width:98%;
+            height:auto;
+            position:relative;
+            left:1%;
+            top:1%;
+            background-color: rgb(224, 233, 233);
+          }
+          .pic{
+            position:relative;
+            left:5%;
+            top:2%;
+          }
+          .post{
+            position: relative;
+            bottom:2vh;
+            color:rgb(102, 96, 96)
+          }
+          .butn{
+                position:relative;
+                top:3vh;
+                background-color:rgb(241, 227, 227);
+                display:flex;
+                width:100%;
+                height:5vh;
+                text-align:center;  
+            }
+            .butn a{
+                color:rgb(14, 1, 1);
+                text-decoration:none;
+                display:inline-block;
+                width:inherit;
+                border-right:1px solid rgb(240, 238, 234);
+                padding-top:8px;
+            }
+            .butn a:hover{
+              background-color:rgb(96, 96, 194);
+              color:antiquewhite;
+            }
+            .sort{
+                position:relative;
+                top:5vh;
+                display:flex;
+            }
+            hr{
+                width:85%;
+                height:0px;
+                position:relative;
+                top:1.5vh;
+            }
+          .end{
+            width:20%;
+            height:113vh;
+            background-color:rgb(216, 234, 247);
+          }
+          .up{
+            text-indent:10%;
+            height:auto;
+            background-color: rgb(226, 228, 228);
+                
+          }
+          .ic{
+            display: flex;
+          }
+          
+          .ex{
+            position:absolute;
+            right:1%;
+            color:rgb(105, 105, 241)
+          }
+
+          .ex,.t,.t1,.t2,.t3,.t4,.t5,.t6{
+           padding-top:2vh;
+          }
+          .t6 a{
+            color:blue;
+          }
+          .down{
+            position:relative;
+            top:1vh;
+            background-color:rgb(226, 228, 228);
+            height:auto;
+            text-align: center;
+            line-height:5vh;
+
+          }
+          .brand{
+            display:flex;
+          } 
+          button{
+            background-color: transparent;
+            color:blue;
+            border:2px solid blue;
+            border-radius: 20px;
+            text-align: center;
+          }
+          .b1{
+            position: relative;
+            top:1vh;
+          }
+          .link{
+            position:relative;
+            top:5vh;
+            text-align: center;
+          }
+          .off{
+            position:relative;
+            top:10vh;
+            text-align: center;
+          }
+        </style>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="nav">
+                <div class="x1 col-sm-1"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40px" height="40px"></div>
+                <div class="x2 col-sm-3"><i class="s fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search"></div>
+                <div class="x3 col-sm-1"><a href="#"><i class="fa-solid fa-house"></i><span>Home</span></a></div>
+                <div class="x3 col-sm-1"><a href="#"><i class="fa-solid fa-user"></i><span>My Network</span></a></div>
+                <div class="x3 col-sm-1"><a href="#"><i class="fa-solid fa-briefcase"></i><span>jobs</span></a></div>
+                <div class="x3 col-sm-1"><a href="#"><i class="fa-solid fa-message"></i><span>Message</span></a></div>
+                <div class="x3 col-sm-1"><a href="#"><i class="fa-solid fa-bell"></i><span>Notification</span></a></div>
+                <div class="x4 col-sm-3"><a href="#"><img class="im"src="https://th.bing.com/th/id/OIP.NchpcfuDdntBCr_a8e2tUQHaJN?w=161&h=200&c=7&r=0&o=5&pid=1.7"width="40px" height="40px" ></a>
+                <div><i class="act fa-sharp fa-solid fa-circle"></i></div>
+            </div>
+               
+            </div>
+        </div>
+        <div class="page">
+            <div class="start">
+                <div class="cover">
+                    <div><img src="https://english.cdn.zeenews.com/sites/default/files/2017/05/24/597291-virat-kohli-smile-pti.jpg" width="100%" height="100vh"/></div>
+                    <img class="im1"src="https://th.bing.com/th/id/OIP.NchpcfuDdntBCr_a8e2tUQHaJN?w=161&h=200&c=7&r=0&o=5&pid=1.7"width="40px" height="40px" ></a>
+                    <div><h2>Virat Kohli</h2></div>
+                    <div><h4>Indian Cricketer</h4></div>
+                    <div class="view">
+                      <div class="first">
+                        <div>Your Profile views</div>
+                        <div>Your Post views</div>
+                        <div>Your Connections</div>
+                      </div>
+                      <div class="second">
+                        <div>1123</div>
+                        <div>923</div>
+                        <div>2524</div>
+                      </div>
+                      </div>
+                      <div class="footer">
+                            <a href="#"><i class="fa-solid fa-bookmark"></i><span>My Items</span></a>
+                            <a href="#"><img src="premium.png" width="20px" height="15px"<span> Try Premium</span></a>
+                    </div>
+                </div>
+                <div class="code">
+                    <div class="recents">
+                        <div><span><h3>RECENT</h3></span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Web Development</span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Use Interface</span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Online Learning</span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Learn Online</span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Code Better</span></div>
+                        <div><i class="r fa-solid fa-clock-rotate-left"></i><span>Group Learning</span></div>
+                    </div>
+                    <div class="groups">
+                        <div><span><h3>GROUPS</h3></span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>Web Development</span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>HTML & CSS</span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>React</span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>Node</span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>Python</span></div>
+                        <div><i class="g fa-regular fa-user"></i><i class="g1 fa-regular fa-user"></i><span>Java</span></div>
+                    </div>
+                    <div class="hashtag">
+                        <div><span><h3>HASHTAG</h3></span></div>
+                        <div><i class="h fa-solid fa-hashtag"></i><span>Web Development</span></div>
+                        <div><i class="h fa-solid fa-hashtag"></i><span>Use Interface</span></div>
+                        <div><i class="h fa-solid fa-hashtag"></i><span>Online Learning</span></div> 
+                    </div>                   
+            </div>
+            <div class="dis">
+              <div class="dc"><a href="#">Discover more</a></div>
+            </div>
+            </div>
+            <div class="center">
+            <div class="innercenter">
+              <div class="pic"><img class="im"src="https://th.bing.com/th/id/OIP.NchpcfuDdntBCr_a8e2tUQHaJN?w=161&h=200&c=7&r=0&o=5&pid=1.7"width="40px" height="40px"><span class="post">Write a post....</span></div>
+              <div class="butn">
+                <a href="#"><i class="fa-solid fa-camera"></i> <span>Photo</span></a>
+                <a href="#"><i class="fa-solid fa-video"></i> <span>Video</span></a>
+                <a href="#"><i class="fa-solid fa-envelope-open-text"></i> <span>Event</span></a>
+                <a href="#"><i class="fa-solid fa-file-import"></i> <span>Post</span></a>
+              </div>
+              </div>
+              <div class="sort"><hr/><span>Sort by <b>top</b> <i class="fa-solid fa-caret-down"></i></span></div>
+            </div>
+            <div class="end">
+                <div class="up">
+                    <div class="ic">
+                        <div class="t"><h3><pre>Trending News</pre></h3></div>
+                        <div><i class="ex fa-solid fa-circle-exclamation"></i></div>
+                    </div>
+                    <div>
+                        <div class="t1"><h5>High demand for skilled manpower</h5></div>
+                        <p><pre>1d ago    10,934 readers</pre></p>
+                       </div>
+                       <div>
+                        <div class="t2"><h5>High demand for programmers</h5></div>
+                        <p><pre>4d ago    12,958 readers</pre></p>
+                       </div>
+                       <div>
+                        <div class="t3"><h5>High demand for Java Script</h5></div>
+                        <p><pre>6d ago    12,934 readers</pre></p>
+                       </div>
+                       <div>
+                        <div class="t4"><h5>High demand for MERN</h5></div>
+                        <p><pre>9d ago    10,944 readers</pre></p>
+                       </div>
+                       <div>
+                        <div class="t5"><h5>Python is most demand skill</h5></div>
+                        <p><pre>15d ago    15,934 readers</pre></p>
+                       </div>  
+                       <div class="t6"><a href="#">Read more</a></div>
+                </div>
+                <div class="down">
+                    <div>Ad...</div>
+                    <div><p>Master the 5 principles of web design</p></div>
+                    <div class="profile">
+                        <img class="im"src="https://th.bing.com/th/id/OIP.NchpcfuDdntBCr_a8e2tUQHaJN?w=161&h=200&c=7&r=0&o=5&pid=1.7"width="40px" height="40px">
+                        <img class="im"src="https://th.bing.com/th/id/OIP.0m49yaU6QSF7nnz-ei6c8wHaEK?pid=ImgDet&rs=1" width="40px" height="40px"/>
+                    </div>
+                    <div class="brand">
+                        <div><h5>Brand and Demand in xiomi</h5></div>
+                        <div class="b1"><button>Learn More</button></div>
+                    </div>
+                </div>
+            
+                    <div class="link"><a href="#">About Accessibility Help center Privacy policy Advertising Get the App More</a></div>
+                    <div class="off"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20px" height="20px"><a href="#">Linkme</a><span>@ 2022 All rights reserved</span></div>
+            
+            </div>
+        </div>
+    </body>
+</html>
